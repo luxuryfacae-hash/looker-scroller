@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+.ticker {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 15s linear infinite;
+  font-size: 48px;
+  font-family: Arial, sans-serif;
+  color: #00ff6a;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+</style>
+</head>
+<body>
+  <div class="ticker">
+    EUR ▲ +5 &nbsp;&nbsp;|&nbsp;&nbsp; SALES UP &nbsp;&nbsp;|&nbsp;&nbsp; TARGET ACHIEVED
+  </div>
+</body>
+</html>
